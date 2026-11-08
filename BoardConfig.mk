@@ -2,7 +2,7 @@
 # Copyright (C) 2023 SebaUbuntu's TWRP device tree generator
 # SPDX-License-Identifier: Apache-2.0
 
-DEVICE_PATH := device/huawei/kirin710
+DEVICE_PATH := device/honor/JSN_AL00a
 
 # Build Rules
 BUILD_BROKEN_DUP_RULES := true
@@ -28,7 +28,7 @@ TARGET_2ND_CPU_VARIANT := generic
 TARGET_2ND_CPU_VARIANT_RUNTIME := cortex-a55
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := kirin710,INE-LX1,INE-L21
+TARGET_OTA_ASSERT_DEVICE := kirin710,HWJSN-HM,JSN_AL00a
 
 # Bootloader
 TARGET_BOOTLOADER_BOARD_NAME := kirin710
@@ -37,7 +37,6 @@ TARGET_NO_BOOTLOADER := true
 # Platform
 TARGET_BOARD_PLATFORM := kirin710
 TARGET_BOARD_PLATFORM_GPU := mali
-BUILD_BROKEN_DUP_RULES := true
 TARGET_USES_64_BIT_BINDER := true
 TARGET_SUPPORTS_64_BIT_APPS := true
 
@@ -45,7 +44,7 @@ TARGET_SUPPORTS_64_BIT_APPS := true
 BOARD_KERNEL_BASE := 0x10000000
 BOARD_KERNEL_PAGESIZE := 2048
 BOARD_KERNEL_IMAGE_NAME := dummykernel
-BOARD_CUSTOM_BOOTIMG_MK := device/huawei/kirin710/custombootimg.mk
+BOARD_CUSTOM_BOOTIMG_MK := device/honor/JSN_AL00a/custombootimg.mk
 BOARD_MKBOOTIMG_ARGS := --kernel_offset 0x8000 --ramdisk_offset 0x01000000 --tags_offset 0x0100
 
 # Partitions
@@ -64,7 +63,7 @@ TARGET_COPY_OUT_PRODUCT := product
 BOARD_PRODUCTIMAGE_FILE_SYSTEM_TYPE := ext4
 
 # System as root
-#BOARD_BUILD_SYSTEM_ROOT_IMAGE := true
+BOARD_BUILD_SYSTEM_ROOT_IMAGE := true
 BOARD_ROOT_EXTRA_FOLDERS := d hw_odm twres splash2 sec_storage
 
 # File System
@@ -86,8 +85,8 @@ TW_EXTRA_LANGUAGES := true
 TW_INCLUDE_NTFS_3G := true
 TW_USE_TOOLBOX := true
 TW_BRIGHTNESS_PATH := /sys/class/leds/lcd_backlight0/brightness
-TW_MAX_BRIGHTNESS := 7675
-TW_DEFAULT_BRIGHTNESS := 4000
+TW_MAX_BRIGHTNESS := 10000
+TW_DEFAULT_BRIGHTNESS := 2500
 TARGET_USE_CUSTOM_LUN_FILE_PATH := "/config/usb_gadget/g1/functions/mass_storage.gs6/lun.%d/file"
 TW_CUSTOM_BATTERY_PATH := /sys/class/power_supply/Battery
 TW_NO_HAPTICS := true
@@ -128,7 +127,7 @@ PLATFORM_VERSION := 16.1.0
 SELINUX_IGNORE_NEVERALLOWS := true
 
 BOARD_SEPOLICY_DIRS += \
-    device/huawei/kirin710/sepolicy
+    device/honor/JSN_AL00a/sepolicy
 
 BOARD_SEPOLICY_UNION += \
     tee.te \
