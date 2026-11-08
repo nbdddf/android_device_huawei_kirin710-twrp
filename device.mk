@@ -14,11 +14,11 @@
 # limitations under the License.
 #
 
-LOCAL_PATH := device/huawei/kirin710
+LOCAL_PATH := device/honor/JSN_AL00a
 
 # Kernel
 PRODUCT_COPY_FILES += \
-    device/huawei/kirin710/dummykernel:kernel
+     device/honor/JSN_AL00a/dummykernel:kernel
     
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
