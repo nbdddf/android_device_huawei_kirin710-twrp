@@ -3,12 +3,12 @@
 # SPDX-License-Identifier: Apache-2.0
 
 # Device Information
-PRODUCT_DEVICE := kirin710
-PRODUCT_NAME := twrp_$(PRODUCT_DEVICE)
-PRODUCT_BRAND := Huawei
-PRODUCT_MODEL := Nova 3I
-PRODUCT_MANUFACTURER := $(PRODUCT_BRAND)
-PRODUCT_RELEASE_NAME := INE-LX1
+PRODUCT_DEVICE := JSN_AL00a
+PRODUCT_NAME := fox_$(PRODUCT_DEVICE)
+PRODUCT_BRAND := honor
+PRODUCT_MODEL := Honor 8x
+PRODUCT_MANUFACTURER := Huawei
+PRODUCT_RELEASE_NAME := HWJSN-HM
 
 # Inherit from Prebuilt Products.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
@@ -16,7 +16,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/base.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
 
 # Inherit from RMX3085 Device Tree.
-$(call inherit-product, device/huawei/kirin710/device.mk)
+$(call inherit-product, device/honor/JSN_AL00a/device.mk)
 
 # Inherit from GSI Products.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/developer_gsi_keys.mk)
@@ -27,4 +27,4 @@ $(call inherit-product-if-exists, vendor/pb/config/common.mk)
 # Inherit from TWRP-common stuff, if building TWRP.
 $(call inherit-product-if-exists, vendor/twrp/config/common.mk)
 
-PRODUCT_GMS_CLIENTID_BASE := android-$(PRODUCT_MANUFCATURER)
+PRODUCT_GMS_CLIENTID_BASE := android-huawei
