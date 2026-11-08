@@ -3,9 +3,9 @@
 # SPDX-License-Identifier: Apache-2.0
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/twrp_kirin710.mk
-    
+    $(LOCAL_DIR)/fox_JSN_AL00a.mk
+
 COMMON_LUNCH_CHOICES := \
-    twrp_kirin710-user \
-    twrp_kirin710-userdebug \
-    twrp_kirin710-eng
+    fox_JSN_AL00a-user \
+    fox_JSN_AL00a-userdebug \
+    fox_JSN_AL00a-eng
