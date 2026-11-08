@@ -4,6 +4,6 @@
 
 LOCAL_PATH := $(call my-dir)
 
-ifeq ($(TARGET_DEVICE),nashc)
+ifeq ($(TARGET_DEVICE),JSN_AL00a)
 include $(call all-subdir-makefiles,$(LOCAL_PATH))
 endif
